@@ -1,0 +1,111 @@
+body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .topnav a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+    body {
+      background: #fff;
+      font-family: "Comfortaa", sans-serif;
+    }
+  
+    .main-content {
+      scroll-snap-type: y mandatory;
+      height: 100vh;
+      overflow-y: scroll;
+      margin-right: 5px;
+    }
+    
+    section {
+      height: 100vh;
+      width: 100%;
+      scroll-snap-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .fixed-base {
+      position: fixed;
+      top: 0;
+      left: -11px;
+      z-index: -1;
+    }
+    .fixed-base .image{
+      border: 3px solid;
+      box-shadow: 0 0 0 2px #fff, 0 0 0 4.5px #000;
+      background: #fff;
+    }
+    .fixed-base .text {
+      position: absolute;
+      width: 100%;
+      font: 14px "Unica One", cursive;
+      z-index: 0;
+      text-align: justify;
+    }
+    
+    .image{
+      width: 250px;
+      height: 70%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      position: relative;
+      z-index: 10;
+    }
+    .image img {
+      height: 80%;
+      width: auto;
+    }
+    .image .name {
+      position: absolute;
+      top: -8px;
+      margin-bottom: 30px;
+      right: -50px;
+      text-align: right;
+      text-transform: uppercase;
+      font: 40px "ZCOOL QingKe HuangYou", cursive;
+      writing-mode: vertical-rl;
+      color: #000;
+      background: #fff;
+      padding: 2px 0;
+    }
+    .image .name1 {
+      position: absolute;
+      top: -8px;
+      margin-bottom: 30px;
+      right: -50px;
+      text-align: left;
+      text-transform: uppercase;
+      font: 40px "ZCOOL QingKe HuangYou", cursive;
+      color: #fbf9f9;
+      background: #020202;
+      padding: 2px 2px;
+    }
+   
+   
+  
+    
+    
