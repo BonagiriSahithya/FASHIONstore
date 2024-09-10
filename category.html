@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="category.css">
+</head>
+<body>
+      <ul class="tabs">
+            <li class="active" data-id="0">SHOE</li>
+            <li data-id="1">WATCH</li>
+            <li data-id="2">SPECTACLE</li>
+            <li data-id="3">CHAIN</li>
+        </ul>
+    
+        <div class="contents">
+    
+            <div class="box show" data-content="0">
+                <img src="https://cdn.luxe.digital/media/20230927114650/most-expensive-sneakers-bred-air-jordans-13-review-luxe-digital-900x600.jpeg.webp" alt="">
+                <div>
+                    <h3>Jordans - Game 2 of the 1998 NBA Finals</h3>
+                    <p>
+                        What can possibly be more valuable than a pair of solid gold Jordans? The pair Michael Jordan wore during Game 2 of the 1998 NBA Finals. The same final that the Chicago Bulls won,
+                         marking Jordan’s sixth NBA championship victory and his final season with the Bulls.
+
+                        The game was featured in The Last Dance, an ESPN/Netflix documentary about Jordan’s final season with the Chicago Bulls.
+                        Auction house Sotheby’s leveraged the documentary’s success to put this pair on auction in April 2023. While setting a record for the most expensive sneakers ever sold, it still comes shy of the $4 Million Sotheby’s hoped to fetch from the auction.
+
+                        Interesting fact about this pair: Sotheby’s says that Jordan autographed the shoes and gave them to a ball-boy after the game. 
+                        The auction house didn’t specify, however, if that boy was the seller in 2023. We don’t know who the buyer is either.
+                                          </p>
+                </div>
+            </div>
+    
+            <div class="box hide" data-content="1">
+                <img src="https://cdn.luxe.digital/media/20230120132923/most-expensive-watches-graff-diamonds-hallucination-luxe-digital-900x600.jpg.webp" alt="">
+                <div>
+                    <h3>Hallucination</h3>
+                    <p>
+                        The most expensive watch ever made is another Graff Diamonds creation. The Hallucination is, as the name suggests, truly breathtaking and brilliantly fantastical. 
+
+                        Featuring a kaleidoscopic array of 110 carats of different colored diamonds in a range of different cuts, set into a platinum bracelet, 
+                        The Hallucination brings high fashion to the world of Horlogerie. About as far from a tactical watch as you can get,
+                        it’s almost easy to forget this piece’s timekeeping capabilities, but there is a tiny dial in the center of all that sparkle. 
+                    </p>
+                </div>
+            </div>
+    
+            <div class="box hide" data-content="2">
+                <img src="https://lh3.googleusercontent.com/I-pnFjN6wG1O4wni5P108wda7kRky4scPsJOmqPU1_WN5wd_UMpgARpObOFLGpeKalMli-WlAlb_ys2x1HWmOPik2neur_KOTyT19U1SPo6ydI3FOSpn6tHSYZ36TObIsw" alt="">
+                <div>
+                    <h3>Sunglass</h3>
+                    <p>
+                        Indeed when it comes to hugely expensive eyewear this tends to mainly be in the field of sunglasses, 
+                        which is perhaps no surprise as it’s in this field that truly stylish looks can be best completed.
+                        Now the actual glasses are pretty plain in terms of the manufacturing of the pair. Made of plastic, but custom made. 
+                    </p>
+                </div>
+            </div>
+    
+            <div class="box hide" data-content="3">
+                <img src="https://image.cnbcfm.com/api/v1/image/104838627-Untitled-1.jpg?v=1529476752" alt="">
+                <div>
+                    <h3>Asymmetrical Necklace </h3>
+                    <p>A necklace featuring a giant 163.41-carat colorless diamond
+                        Eighteen emerald-cut diamonds adorn one side of the necklace, while emeralds decorate the other.
+                         Its centerpiece is the colorless diamond: a D color, IIA type diamond — the rarest and most valuable kind.
+
+                        “It goes perfectly — the main stone with the necklace, it looks like just a beautiful piece,” 
+                        said Fawaz Gruosi, the founder of de Grisogono, the Swiss luxury jeweler that created the unique necklace.
+                    </p>
+                </div>
+            </div>
+    <script>
+      'use strict';
+const tabs = document.querySelectorAll('[data-id]');
+const contents = document.querySelectorAll('[data-content]');
+let id = 0;
+
+tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+        tabs[id].classList.remove('active');
+        tab.classList.add('active');
+        id = tab.getAttribute('data-id');
+        contents.forEach(function (box) {
+            box.classList.add('hide');
+            if (box.getAttribute('data-content') == id){
+                box.classList.remove('hide');
+                box.classList.add('show');
+            }
+        });
+    });
+});
+    </script>
+        </div>
+</body>
+</html>
